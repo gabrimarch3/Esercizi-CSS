@@ -8,11 +8,20 @@ html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body {
+    background-color: #90e0ef;
+}
+
 article {
     width: 20%;
     border: 1px solid #808080;
-    margin-left: 500px;
-    margin-top: 50px;
+    position: absolute;
+    left: 40%;
+    top: 30px;
+}
+
+figure {
+    background-color: #808080;
 }
 
 img {
@@ -24,4 +33,5 @@ img {
 
 a, h3, p, section {
     padding: 10px;
+    background-color: #ade8f4;
 }
