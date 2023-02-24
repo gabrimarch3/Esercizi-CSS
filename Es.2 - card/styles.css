@@ -10,9 +10,11 @@ html {
 
 body {
     background-color: #90e0ef;
+    width: 100vh;
 }
 
-article {
+.main-card {
+    min-width: 300px;
     width: 20%;
     border: 1px solid #808080;
     position: absolute;
