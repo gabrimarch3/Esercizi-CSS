@@ -1,0 +1,27 @@
+.ordinatore {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#yellow ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#red ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#green {
+    grid-column: 1/4;
+}
+
+#orange {
+    grid-column: 1/3;
+}
+
+#blue {
+    grid-column-start: 3;
+    grid-row: 2/5;
+}
