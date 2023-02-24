@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+
+
+:root {
+    /* COLORS */
+    --result-background: #424c52;
+    --operator-color: #d2dce3;
+    --number-color: #eff2f5;
+    --equal-color: #f77077;
+    --calc-border-color: #899dae;
+
+    /* STYLE */
+    --calc-border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-size: 25px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "risultato risultato risultato risultato";
+    border-radius: var(--calc-border-radius);
+    border: 1px solid var(--calc-border-color);
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+div {
+    border: 1px solid var(--calc-border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.risultato {
+    background-color: var(--result-background);
+    grid-column: 1/5;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 7px;
+}
+
+.operatori {
+    background-color: var(--operator-color);
+}
+
+.uguale {
+    background-color: var(--equal-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 4;
+    grid-row: 3/7;
+}
+
+/* Effetto al passaggio del mouse */
+
+.numeri:hover {
+    background-color: #e6edef;
+}
+
+.uguale:hover {
+    background-color: #f58f90;
+}
+
+.operatori:hover {
+    background-color: #b9c2cc;
+}
+
+/* Effetto al click */
+
+.numeri:active {
+    background-color: var(--number-color);
+}
+
+.uguale:active {
+    background-color: var(--equal-color);
+}
+
+.operatori:active {
+    background-color: var(--operator-color);
+}
