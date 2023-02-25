@@ -1,0 +1,8 @@
+:root {
+    /* COLOR */
+
+    --card-linear-background: linear-gradient(#aeaeae, #fafafa);
+    --card-shadow-color: #d0d0d0;
+    --card-title-h3-color: black;
+    --card-title-p-color: white;
+}
